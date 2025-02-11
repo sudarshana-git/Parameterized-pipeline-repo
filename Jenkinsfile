@@ -32,7 +32,7 @@ pipeline {
     stage('Integration Testing') {
       steps {
         sh "sleep ${params.SLEEP_TIME}"
-        sh "curl -s http://localhost:${params.APP_PORT}/hello"
+        sh "curl -s http://107.21.197.219:${params.APP_PORT}/hello"
       }
     }
 
